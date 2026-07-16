@@ -1,0 +1,18 @@
+# Python bytecode & virtual-envs (generated inside the repo)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Logs
+*.log
+
+# Model weights: ignore large / third-party weights that live in the repo root
+# (e.g. the ~50 MB yolov8m.pt, auto-downloaded by ultralytics), but KEEP our
+# small shipped deployment weight so the app runs straight out of the repo.
+*.pt
+!deploy/breath_gru.pt
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
